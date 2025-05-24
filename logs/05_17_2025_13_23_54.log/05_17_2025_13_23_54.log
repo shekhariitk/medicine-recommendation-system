@@ -1,0 +1,42 @@
+[2025-05-17 13:23:55,601] 24 root - INFO - Data Ingestion method starts
+[2025-05-17 13:23:55,679] 29 root - INFO - Dataset read as pandas DataFrame
+[2025-05-17 13:23:55,784] 36 root - INFO - Raw data saved at: artifacts\raw.csv
+[2025-05-17 13:23:55,785] 39 root - INFO - Train-test split in progress
+[2025-05-17 13:23:55,923] 46 root - INFO - Data Ingestion is completed successfully
+[2025-05-17 13:23:56,111] 96 root - INFO - Successfully read train and test data.
+[2025-05-17 13:23:56,353] 31 root - INFO - Data Transformation Initiated
+[2025-05-17 13:23:56,354] 82 root - INFO - Data Transformation Pipeline created successfully.
+[2025-05-17 13:23:56,676] 121 root - INFO - Applied preprocessing to train and test datasets.
+[2025-05-17 13:23:56,693] 129 root - INFO - Preprocessor object saved successfully.
+[2025-05-17 13:23:56,694] 133 root - INFO - Label Encoder object saved successfully.
+[2025-05-17 13:23:56,704] 36 root - INFO - Splitting independent and Dependent Variable
+[2025-05-17 13:23:56,709] 32 root - INFO - model:LogisticRegression() is started
+[2025-05-17 13:24:53,114] 40 root - INFO - model:LogisticRegression(C=0.01, solver='liblinear') is Evaluated and best param is {'C': 0.01, 'max_iter': 100, 'penalty': 'l2', 'solver': 'liblinear'}
+[2025-05-17 13:24:53,118] 46 root - INFO - model:LogisticRegression(C=0.01, solver='liblinear') prediction is completed
+[2025-05-17 13:24:53,120] 51 root - INFO - model:LogisticRegression(C=0.01, solver='liblinear') score is stored and the socre is : 1.0
+[2025-05-17 13:24:53,120] 32 root - INFO - model:DecisionTreeClassifier() is started
+[2025-05-17 13:24:59,715] 40 root - INFO - model:DecisionTreeClassifier() is Evaluated and best param is {'criterion': 'gini', 'max_depth': None, 'min_samples_leaf': 1, 'min_samples_split': 2}
+[2025-05-17 13:24:59,717] 46 root - INFO - model:DecisionTreeClassifier() prediction is completed
+[2025-05-17 13:24:59,718] 51 root - INFO - model:DecisionTreeClassifier() score is stored and the socre is : 1.0
+[2025-05-17 13:24:59,718] 32 root - INFO - model:RandomForestClassifier() is started
+[2025-05-17 13:27:48,666] 40 root - INFO - model:RandomForestClassifier(n_estimators=50) is Evaluated and best param is {'max_depth': None, 'min_samples_leaf': 1, 'min_samples_split': 2, 'n_estimators': 50}
+[2025-05-17 13:27:48,691] 46 root - INFO - model:RandomForestClassifier(n_estimators=50) prediction is completed
+[2025-05-17 13:27:48,692] 51 root - INFO - model:RandomForestClassifier(n_estimators=50) score is stored and the socre is : 1.0
+[2025-05-17 13:27:48,692] 32 root - INFO - model:ExtraTreesClassifier() is started
+[2025-05-17 13:31:51,217] 40 root - INFO - model:ExtraTreesClassifier(n_estimators=50) is Evaluated and best param is {'max_depth': None, 'min_samples_leaf': 1, 'min_samples_split': 2, 'n_estimators': 50}
+[2025-05-17 13:31:51,281] 46 root - INFO - model:ExtraTreesClassifier(n_estimators=50) prediction is completed
+[2025-05-17 13:31:51,283] 51 root - INFO - model:ExtraTreesClassifier(n_estimators=50) score is stored and the socre is : 1.0
+[2025-05-17 13:31:51,283] 32 root - INFO - model:KNeighborsClassifier() is started
+[2025-05-17 13:31:59,259] 40 root - INFO - model:KNeighborsClassifier(metric='manhattan', n_neighbors=3) is Evaluated and best param is {'metric': 'manhattan', 'n_neighbors': 3, 'weights': 'uniform'}
+[2025-05-17 13:31:59,554] 46 root - INFO - model:KNeighborsClassifier(metric='manhattan', n_neighbors=3) prediction is completed
+[2025-05-17 13:31:59,557] 51 root - INFO - model:KNeighborsClassifier(metric='manhattan', n_neighbors=3) score is stored and the socre is : 1.0
+[2025-05-17 13:31:59,557] 32 root - INFO - model:AdaBoostClassifier() is started
+[2025-05-17 13:34:37,902] 40 root - INFO - model:AdaBoostClassifier(learning_rate=0.1, n_estimators=200) is Evaluated and best param is {'learning_rate': 0.1, 'n_estimators': 200}
+[2025-05-17 13:34:38,718] 46 root - INFO - model:AdaBoostClassifier(learning_rate=0.1, n_estimators=200) prediction is completed
+[2025-05-17 13:34:38,721] 51 root - INFO - model:AdaBoostClassifier(learning_rate=0.1, n_estimators=200) score is stored and the socre is : 0.9979674796747967
+[2025-05-17 13:34:38,722] 32 root - INFO - model:SVC() is started
+[2025-05-17 13:35:36,041] 40 root - INFO - model:SVC(C=0.1, kernel='linear') is Evaluated and best param is {'C': 0.1, 'gamma': 'scale', 'kernel': 'linear'}
+[2025-05-17 13:35:36,059] 46 root - INFO - model:SVC(C=0.1, kernel='linear') prediction is completed
+[2025-05-17 13:35:36,059] 51 root - INFO - model:SVC(C=0.1, kernel='linear') score is stored and the socre is : 1.0
+[2025-05-17 13:35:36,060] 114 root - INFO - Model report info : {'LogisticRegression': 1.0, 'DecisionTreeClassifier': 1.0, 'RandomForestClassifier': 1.0, 'Extratressclassifier': 1.0, 'KNeighborsClassifier': 1.0, 'AdaBoostClassifier': 0.9979674796747967, 'SVC': 1.0}
+[2025-05-17 13:35:36,061] 126 root - INFO - Best model found , Best model name is LogisticRegression and that R2 Score: 1.0

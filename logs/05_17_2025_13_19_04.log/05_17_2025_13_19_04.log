@@ -1,0 +1,11 @@
+[2025-05-17 13:19:15,571] 24 root - INFO - Data Ingestion method starts
+[2025-05-17 13:19:15,690] 29 root - INFO - Dataset read as pandas DataFrame
+[2025-05-17 13:19:15,798] 36 root - INFO - Raw data saved at: artifacts\raw.csv
+[2025-05-17 13:19:15,798] 39 root - INFO - Train-test split in progress
+[2025-05-17 13:19:15,921] 46 root - INFO - Data Ingestion is completed successfully
+[2025-05-17 13:19:16,061] 96 root - INFO - Successfully read train and test data.
+[2025-05-17 13:19:16,331] 31 root - INFO - Data Transformation Initiated
+[2025-05-17 13:19:16,331] 82 root - INFO - Data Transformation Pipeline created successfully.
+[2025-05-17 13:19:16,687] 121 root - INFO - Applied preprocessing to train and test datasets.
+[2025-05-17 13:19:16,693] 129 root - INFO - Preprocessor object saved successfully.
+[2025-05-17 13:19:16,695] 133 root - INFO - Label Encoder object saved successfully.

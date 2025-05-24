@@ -1,0 +1,103 @@
+{% extends "base.html" %}
+
+{% block content %}
+<section class="about-hero">
+    <div class="container">
+        <h1>About HealthAI</h1>
+        <p>Revolutionizing healthcare through machine learning and artificial intelligence</p>
+    </div>
+</section>
+
+<section class="about-content">
+    <div class="container">
+        <div class="about-section">
+            <h2>Our Mission</h2>
+            <p>HealthAI was created with a simple but powerful goal: to make healthcare more accessible and accurate through the power of artificial intelligence. Our system bridges the gap between patients and preliminary medical diagnosis, providing instant insights based on reported symptoms.</p>
+        </div>
+
+        <div class="about-section">
+            <h2>How Our AI Works</h2>
+            <div class="ai-process">
+                <div class="process-step">
+                    <div class="step-number">1</div>
+                    <h3>Symptom Analysis</h3>
+                    <p>Our advanced machine learning model analyzes patterns in hundreds of symptoms and their relationships to various conditions.</p>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">2</div>
+                    <h3>Disease Prediction</h3>
+                    <p>Using a trained Logistic Regression model, the system predicts the most likely condition based on symptom combinations.</p>
+                </div>
+                <div class="process-step">
+                    <div class="step-number">3</div>
+                    <h3>Comprehensive Recommendations</h3>
+                    <p>The system provides not just a diagnosis, but complete treatment plans including medications, diets, exercises, and precautions.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="about-section">
+            <h2>Our Technology Stack</h2>
+            <div class="tech-stack">
+                <div class="tech-item">
+                    <i class="fas fa-brain"></i>
+                    <h3>Machine Learning</h3>
+                    <p>Logistic Regression and various other model trained on thousands of medical cases for accurate predictions</p>
+                </div>
+                <div class="tech-item">
+                    <i class="fas fa-database"></i>
+                    <h3>Medical Databases</h3>
+                    <p>Comprehensive datasets covering symptoms, diseases, medications, and treatments</p>
+                </div>
+                <div class="tech-item">
+                    <i class="fas fa-laptop-code"></i>
+                    <h3>Web Framework</h3>
+                    <p>Flask-powered backend with responsive frontend design</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="about-section">
+            <h2>Important Disclaimer</h2>
+            <div class="disclaimer-box">
+                <i class="fas fa-exclamation-triangle"></i>
+                <p>HealthAI is designed to provide preliminary health information and should not be used as a substitute for professional medical advice, diagnosis, or treatment. Always seek the advice of your physician or other qualified health provider with any questions you may have regarding a medical condition.</p>
+            </div>
+        </div>
+
+        <div class="about-section team-section">
+            <h2>Meet Our Team</h2>
+            <div class="team-members">
+                <div class="team-member">
+                    <div class="member-image">
+                        <i class="fas fa-user-md"></i>
+                    </div>
+                    <h3>Medical Experts</h3>
+                    <p>Board-certified physicians who validate our medical content</p>
+                </div>
+                <div class="team-member">
+                    <div class="member-image">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <h3>AI Specialists</h3>
+                    <p>Machine learning engineers who develop our prediction models</p>
+                </div>
+                <div class="team-member">
+                    <div class="member-image">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3>Developers</h3>
+                    <p>Software engineers who build and maintain our platform</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="cta-section">
+    <div class="container">
+        <h2>Ready to Experience AI-Powered Health Diagnosis?</h2>
+        <a href="/" class="btn-cta">Try It Now</a>
+    </div>
+</section>
+{% endblock %}

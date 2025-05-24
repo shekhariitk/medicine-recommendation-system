@@ -1,0 +1,59 @@
+{% extends "base.html" %}
+
+{% block content %}
+<section class="hero">
+    <div class="container">
+        <div class="hero-content">
+            <h2>AI-Powered Health Diagnosis</h2>
+            <p>Select your symptoms and get instant diagnosis with recommended treatments and precautions.</p>
+        </div>
+    </div>
+</section>
+
+<section class="symptoms-form">
+    <div class="container">
+        <form method="POST" action="/">
+            {% if error %}
+                <div class="error-message">{{ error }}</div>
+            {% endif %}
+            
+            <h3>Select Your Symptoms</h3>
+            <div class="symptoms-grid">
+                {% for symptom in symptoms %}
+                <div class="symptom-checkbox">
+                    <input type="checkbox" id="symptom-{{ loop.index }}" name="symptoms" value="{{ symptom }}">
+                    <label for="symptom-{{ loop.index }}">{{ symptom.replace('_', ' ') }}</label>
+                </div>
+                {% endfor %}
+            </div>
+            
+            <button type="submit" class="btn-diagnose">
+                <i class="fas fa-stethoscope"></i> Diagnose
+            </button>
+        </form>
+    </div>
+</section>
+
+<section class="how-it-works">
+    <div class="container">
+        <h2>How It Works</h2>
+        <div class="steps">
+            <div class="step">
+                <div class="step-icon"><i class="fas fa-search"></i></div>
+                <h3>Select Symptoms</h3>
+                <p>Choose from our comprehensive list of symptoms you're experiencing.</p>
+            </div>
+            <div class="step">
+                <div class="step-icon"><i class="fas fa-brain"></i></div>
+                <h3>AI Analysis</h3>
+                <p>Our advanced machine learning model analyzes your symptoms.</p>
+            </div>
+            <div class="step">
+                <div class="step-icon"><i class="fas fa-file-medical"></i></div>
+                <h3>Get Results</h3>
+                <p>Receive diagnosis along with treatment recommendations.</p>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock %}

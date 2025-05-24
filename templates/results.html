@@ -1,0 +1,73 @@
+{% extends "base.html" %}
+
+{% block content %}
+<section class="results-header">
+    <div class="container">
+        <h2>Diagnosis Results</h2>
+        <p>Based on your symptoms, here's what our ML has identified</p>
+    </div>
+</section>
+
+<section class="diagnosis-result">
+    <div class="container">
+        <div class="result-card">
+            <div class="result-title">
+                <h3>Predicted Condition</h3>
+                <span class="disease-name">{{ disease }}</span>
+            </div>
+            
+            <div class="result-section">
+                <h4><i class="fas fa-info-circle"></i> Description</h4>
+                <p>{{ description }}</p>
+            </div>
+            
+            <div class="result-section">
+                <h4><i class="fas fa-medkit"></i> Recommended Medications</h4>
+                <ul>
+                    {% for medicine in medications %}
+                    <li>{{ medicine }}</li>
+                    {% endfor %}
+                </ul>
+            </div>
+            
+            <div class="result-section">
+                <h4><i class="fas fa-shield-alt"></i> Precautions</h4>
+                <div class="precautions-grid">
+                    {% for precaution in precautions %}
+                    <div class="precaution-item">
+                        <i class="fas fa-check-circle"></i>
+                        <span>{{ precaution }}</span>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+            
+            <div class="result-section">
+                <h4><i class="fas fa-utensils"></i> Dietary Recommendations</h4>
+                <ul>
+                    {% for diet in diets %}
+                    <li>{{ diet }}</li>
+                    {% endfor %}
+                </ul>
+            </div>
+            
+            <div class="result-section">
+                <h4><i class="fas fa-running"></i> Recommended Exercises</h4>
+                <ul>
+                    {% for workout in workouts %}
+                    <li>{{ workout }}</li>
+                    {% endfor %}
+                </ul>
+            </div>
+            
+            <div class="disclaimer">
+                <p><strong>Disclaimer:</strong> This is not a substitute for professional medical advice. Please consult a healthcare provider for proper diagnosis and treatment.</p>
+            </div>
+            
+            <a href="/" class="btn-back">
+                <i class="fas fa-arrow-left"></i> Back to Diagnosis
+            </a>
+        </div>
+    </div>
+</section>
+{% endblock %}
