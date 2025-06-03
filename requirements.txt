@@ -6,5 +6,4 @@ scikit-learn
 streamlit
 gunicorn
 flask
-pickle
 -e.
