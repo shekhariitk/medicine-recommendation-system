@@ -1,0 +1,17 @@
+setup.py
+MedicineRecommendationSystem.egg-info/PKG-INFO
+MedicineRecommendationSystem.egg-info/SOURCES.txt
+MedicineRecommendationSystem.egg-info/dependency_links.txt
+MedicineRecommendationSystem.egg-info/requires.txt
+MedicineRecommendationSystem.egg-info/top_level.txt
+src/__init__.py
+src/analysis.py
+src/exception.py
+src/logger.py
+src/utils.py
+src/components/__init__.py
+src/components/data_ingestion.py
+src/components/data_transformation.py
+src/components/model_trainner.py
+src/pipelines/__init__.py
+src/pipelines/training_pipeline.py
